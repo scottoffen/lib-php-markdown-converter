@@ -1,0 +1,11 @@
+{
+  "label": "Settings",
+  "position": 3,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "/settings",
+    "title": "Settings",
+    "description": "Every setting is optional, and you don't need any of them to make the output safe. Each one changes how the output looks, or turns on syntax that the converter shows as plain text by default. Pass settings by name when you create the converter."
+  }
+}

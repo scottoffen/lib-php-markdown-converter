@@ -1,0 +1,31 @@
+<h2>Notes</h2>
+<p>&lt;script&gt;alert('xss')&lt;/script&gt;</p>
+<p>&lt;img src=x onerror=alert(1)&gt;</p>
+<p>Click me or this or that</p>
+<p><a href="https://tracker.example/pixel.gif" rel="noopener noreferrer nofollow" target="_blank">tracking pixel</a></p>
+<p><img src="https://user-images.githubusercontent.com/1/a.png" alt="fine" title="A title" loading="lazy" referrerpolicy="no-referrer"></p>
+<p><a href="https://example.com" title="title&quot; onmouseover=&quot;alert(1)" rel="noopener noreferrer nofollow" target="_blank">link</a></p>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;b&gt;bold&lt;/b&gt;</td>
+<td><code>&lt;i&gt;code&lt;/i&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title">Note</p>
+<p>&lt;details open ontoggle=alert(1)&gt;</p>
+</div>
+<ul>
+<li>[ ] a task</li>
+<li>&amp;lt;escaped&amp;gt; entities stay as typed</li>
+</ul>
+<p>Line one<br>Line two<br>Line three<br>Line four</p>
+<p>Done.</p>

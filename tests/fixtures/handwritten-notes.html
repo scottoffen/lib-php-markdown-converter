@@ -1,0 +1,49 @@
+<h1>Version 0.3.0</h1>
+<p>This release adds a <strong>settings section</strong> and fixes a few <em>small</em> problems. See the <a href="https://github.com/scottoffen/wp-github-updater#usage" rel="noopener noreferrer nofollow" target="_blank">documentation</a> for details.</p>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title">Note</p>
+<p>The settings section needs WordPress 5.8 or later.</p>
+</div>
+<div class="markdown-alert markdown-alert-warning">
+<p class="markdown-alert-title">Warning</p>
+<p>Back up your site before updating. <code>composer update</code> changes the bundled library.</p>
+</div>
+<h2>Changes</h2>
+<ol>
+<li>Added <code>Updater::capability()</code></li>
+<li>Added <code>PluginUpdater::settings()</code>
+<ul>
+<li><code>render()</code> prints the section</li>
+<li><code>addPage()</code> adds a page under Settings</li>
+</ul>
+</li>
+<li>Removed <del>the old token form</del></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th align="center">Returns</th>
+<th align="right">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>render()</code></td>
+<td align="center"><code>void</code></td>
+<td align="right">Prints the section</td>
+</tr>
+<tr>
+<td><code>addPage()</code></td>
+<td align="center"><code>void</code></td>
+<td align="right">Adds a page</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://github.com/scottoffen/wp-github-updater/assets/1/screenshot.png" alt="The settings section" loading="lazy" referrerpolicy="no-referrer"></p>
+<pre><code class="language-php">Updater::plugin(__FILE__)
+    -&gt;fromGitHub('owner/repository')
+    -&gt;register();
+</code></pre>
+<hr>
+<p>Thanks to everyone who tested this release!</p>

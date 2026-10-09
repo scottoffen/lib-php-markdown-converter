@@ -1,0 +1,44 @@
+{
+  "name": "scottoffen/markdown-converter",
+  "description": "Converts Markdown to safe HTML, with GitHub-style tables, images, and alerts.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["markdown", "html", "gfm", "github-flavored-markdown", "safe", "sanitize", "tables", "alerts", "math", "mermaid"],
+  "homepage": "https://github.com/scottoffen/lib-php-markdown-converter",
+  "support": {
+    "docs": "https://scottoffen.github.io/lib-php-markdown-converter/"
+  },
+  "authors": [
+    {
+      "name": "Scott Offen"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5 || ^11.5 || ^12.0"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  },
+  "autoload-dev": {
+    "classmap": ["tests/"]
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": [
+      "@composer dump-autoload --dev",
+      "phpunit --testsuite unit"
+    ],
+    "perf": [
+      "@composer dump-autoload --dev",
+      "phpunit --testsuite performance"
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

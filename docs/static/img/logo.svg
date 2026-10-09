@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">PHP Markdown to HTML</title>
+  <desc id="desc">A bold Markdown M framed by HTML angle brackets in PHP purple, on a transparent background.</desc>
+  <g fill="#777BB3">
+    <path d="M29 36 5 60v8l24 24 8-8-20-20 20-20Z"/>
+    <path d="m99 36 24 24v8L99 92l-8-8 20-20-20-20Z"/>
+    <path d="M40 88V40h11l13 19 13-19h11v48H76V61L64 78 52 61v27Z"/>
+  </g>
+</svg>
